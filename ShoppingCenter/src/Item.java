@@ -1,12 +1,30 @@
 
 public class Item {
-private int quantity;
-private String name;
+	private String name;
+	private int amount;
 	
-	public  int getQuantity() {
-		return quantity;
+	public Item(String name, int amount) {
+		this.name = name;
+		this.amount = amount;
 	}
-	public  String getName() {
+	
+	public String getName() {
 		return name;
+	}
+	
+	public int getAmount() {
+		return amount;
+	}
+	
+	public void increaseAmount(int number) {
+		amount += number;
+	}
+	
+	public void decreaseAmount(int number) {
+		amount -= number;
+	}
+	
+	public void setAmount(int number) {
+		amount = number;
 	}
 }
