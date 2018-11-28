@@ -20,9 +20,7 @@ public class ShoppingCenter {
 		if (customer == null) {
 			throw new InvalidException("Customer " + name + " does not exist");
 		}
-		else {
-			System.out.println(customer);
-		}
+		System.out.println(customer);
 	}
 	
 	public void printAllCustomerStillShopping() {
@@ -38,7 +36,11 @@ public class ShoppingCenter {
 		}
 	}
 	
-	public void checkout() {
+	public Customer expressCheckout() {
+		return express.dequeue();
+		/* The following code is unfinished and should be moved to the Driver
+		 * The checkout methods will only be concerned with checking a customer out. The 
+		 * Driver will handle figuring out which customer needs to be checked out.
 		int expT = express.peek().getTime();
 		int reg1 = regular1.peek().getTime();
 		int reg2 = regular2.peek().getTime();
@@ -47,6 +49,15 @@ public class ShoppingCenter {
 				System.out.println("Does" + express.peek().getName() + "wish to leave or return shopping?");
 			}
 		}
+		*/
+	}
+	
+	public Customer regular1Checkout() {
+		return regular1.dequeue();
+	}
+	
+	public Customer regular2Checkout() {
+		return regular2.dequeue();
 	}
 	
 	public void addCustomer(String name, int numItems) throws NonUniqueException {
@@ -66,6 +77,21 @@ public class ShoppingCenter {
 			}
 		}
 		shoppers.add(customer);
+	}
+	
+	public void removeCustomer(String name) throws NonUniqueException {
+		Customer customer = searchCustomer(name);
+		if (customer == null) {
+			throw new InvalidException("Customer " + name + " does not exist.");
+		}
+		shoppers.remove(customer);
+	}
+	
+	public void removeCustomer(Customer customer) throws NonUniqueException {
+		if (searchCustomer(customer.getName()) == null) {
+			throw new InvalidException("Customer " + customer.getName() + " does not exist.");
+		}
+		shoppers.remove(customer);
 	}
 	
 	public void addItem (String name, int amount) throws NonUniqueException {
