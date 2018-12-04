@@ -32,4 +32,8 @@ public class Customer {
 	public void incrementTime() {
 		time++;
 	}
+	
+	public void createCustomers() {
+		
+	}
 }
