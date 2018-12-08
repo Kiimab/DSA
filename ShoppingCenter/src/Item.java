@@ -27,4 +27,8 @@ public class Item {
 	public void setAmount(int number) {
 		amount = number;
 	}
+	
+	public String toString() {
+		return name;
+	}
 }

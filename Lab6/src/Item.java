@@ -1,6 +1,6 @@
 public class Item {
-	String name;
-	double weight;
+	private String name;
+	private double weight;
 	
 	public Item(String name, double weight) {
 		this.name = name;
@@ -13,5 +13,9 @@ public class Item {
 	
 	public double getWeight() {
 		return weight;
+	}
+	
+	public String toString() {
+		return name;
 	}
 }

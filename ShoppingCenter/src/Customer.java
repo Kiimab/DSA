@@ -36,4 +36,8 @@ public class Customer {
 	public void createCustomers() {
 		
 	}
+	
+	public String toString() {
+		return new String(name + " has shopped for " + time + " minutes.");
+	}
 }
