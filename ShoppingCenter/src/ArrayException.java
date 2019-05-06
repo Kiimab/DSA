@@ -10,9 +10,9 @@
 
 
 
-public class QueueException extends RuntimeException {
+public class ArrayException extends RuntimeException {
 
-	public QueueException(String s) {
-		super(s); // Print a message for when a Queue Exception is caught.
+	public ArrayException(String s) {
+		super(s); // Print a message for when an Array Exception is caught.
 	}
 }

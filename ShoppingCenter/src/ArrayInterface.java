@@ -10,16 +10,16 @@
 
 
 
-public interface QueueInterface<T> {
+public interface ArrayInterface<T> {
 	public boolean isEmpty();
 
-	public void enqueue(T newItem) throws QueueException;
+	public void add(T newItem) throws ArrayException;
 
-	public T dequeue() throws QueueException;
+	public T remove() throws ArrayException;
 
-	public void dequeueAll();
+	public void removeAll();
 
-	public T peek() throws QueueException;
+	public T retrieve() throws ArrayException;
 
 	public String toString();
 }

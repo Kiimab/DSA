@@ -1,0 +1,17 @@
+/Array.class
+/ArrayException.class
+/ArrayInterface.class
+/Customer.class
+/DEQ.class
+/Driver.class
+/ExtendedArrayInterface.class
+/ExtendedQueueException.class
+/ExtendedQueueInterface.class
+/InvalidException.class
+/Item.class
+/NonUniqueException.class
+/Queue.class
+/QueueException.class
+/QueueInterface.class
+/ShoppingCenter.class
+/shoppingCenter/

@@ -10,11 +10,11 @@
 
 
 
-public class Queue<T> implements QueueInterface<T> {
+public class Array<T> implements QueueInterface<T> {
 	protected int front, back, numItems;
 	protected T[] items;
 	
-	public Queue() { // Constructor.
+	public Array() { // Constructor.
 		front = 0; // Initializes the front of the queue.
 		back = 0; // Initializes the back of the queue.
 		numItems = 0; // Initializes the number of items in the queue.
