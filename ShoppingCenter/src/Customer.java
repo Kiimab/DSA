@@ -1,10 +1,6 @@
 /*
- * Purpose: Data Structure and Algorithms Shopping Center Project
- * Status: Complete and thoroughly tested. Fully commented line by line and with Javadoc documentation.
- * Last update: 12/09/18
- * Submitted:  12/09/18
  * Comment: This class creates Customer objects.
- * @author: Kyle Kaminski
+ * @author:Kiima Ballantyne, Kyle Kaminski
  * @version: 1.0
  */
 
